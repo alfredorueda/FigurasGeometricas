@@ -68,6 +68,15 @@ public class ProgramaPrincipal {
             //System.out.println("El perimetro de la figura geometrica " + " es =" + perimetro);
             totalArea = totalArea + areaActual; // suma las areas de todas las figuras
 
+            if(figuraGeometrica instanceof Circumferencia)
+            {
+                Circumferencia circumferencia = (Circumferencia) figuraGeometrica;
+               // cast permite tratar la fig como una circumferencia
+                double diametro = circumferencia.calculaDiametro();
+                System.out.println("El diametro de la circumferencia es = " +diametro);
+            }
+
+
             if (max == null)
             {
                 max = figuraGeometrica;

@@ -22,6 +22,8 @@ public class Circumferencia extends FiguraGeometrica {
         return (2 * Math.PI * radio);
     }
 
+    public double calculaDiametro() {return radio*2;}
+
     @Override
     public String toString() {
         return "Circumferencia{" +
