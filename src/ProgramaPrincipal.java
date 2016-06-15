@@ -20,11 +20,11 @@ public class ProgramaPrincipal {
         for(int i=1; i<=numero; i++)
 
         {
-            System.out.println("Introduce los datos de la circumferencia "+i);
+            System.out.println("Introduce los datos de la circunferencia "+i);
             System.out.println("Introduce el radio:");
             double radio = sc.nextDouble();
 
-            arrayList.add(new Circumferencia(radio,i));
+            arrayList.add(new Circunferencia(radio,i));
 
 
         }
@@ -68,12 +68,12 @@ public class ProgramaPrincipal {
             //System.out.println("El perimetro de la figura geometrica " + " es =" + perimetro);
             totalArea = totalArea + areaActual; // suma las areas de todas las figuras
 
-            if(figuraGeometrica instanceof Circumferencia)
+            if(figuraGeometrica instanceof Circunferencia)
             {
-                Circumferencia circumferencia = (Circumferencia) figuraGeometrica;
-               // cast permite tratar la fig como una circumferencia
-                double diametro = circumferencia.calculaDiametro();
-                System.out.println("El diametro de la circumferencia es = " +diametro);
+                Circunferencia circunferencia = (Circunferencia) figuraGeometrica;
+               // cast permite tratar la fig como una circunferencia
+                double diametro = circunferencia.calculaDiametro();
+                System.out.println("El diametro de la circunferencia es = " +diametro);
             }
 
 

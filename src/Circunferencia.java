@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * Created by professor on 13/06/2016.
  */
-public class Circumferencia extends FiguraGeometrica {
+public class Circunferencia extends FiguraGeometrica {
 
     private double radio;
 
-    public Circumferencia(double radio,long id) {
+    public Circunferencia(double radio,long id) {
         super(id); //llamamos al constructor de fig geom.
         this.radio = radio;
     }
@@ -26,7 +26,7 @@ public class Circumferencia extends FiguraGeometrica {
 
     @Override
     public String toString() {
-        return "Circumferencia{" +
+        return "Circunferencia{" +
                 "id=" + id +
                 ", radio=" + radio +
                 '}';
