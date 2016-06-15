@@ -58,13 +58,15 @@ public class ProgramaPrincipal {
         }
 
         FiguraGeometrica max= null;
+        double totalArea = 0.0;
+
         for(FiguraGeometrica figuraGeometrica : arrayList) // recorremos el array
         {
             double areaActual = figuraGeometrica.calculaArea();
             double perimetro = figuraGeometrica.calculaPerimetro();
             System.out.println("El area de la figura geometrica " + figuraGeometrica.getId() + " es = " + areaActual);
             //System.out.println("El perimetro de la figura geometrica " + " es =" + perimetro);
-
+            totalArea = totalArea + areaActual; // suma las areas de todas las figuras
 
             if (max == null)
             {
@@ -78,6 +80,10 @@ public class ProgramaPrincipal {
                 }
             }
         }
+
+        int totalFiguras = numero*3;  //porque tenemos 3 subclases de figuras
+        double media = totalArea/totalFiguras;
+        System.out.println("La media del area de las fig. geom es= "+ media);
         System.out.println("La figura geometrica de area maxima es: " + max);
 
     }
