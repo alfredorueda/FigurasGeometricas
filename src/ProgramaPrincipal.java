@@ -51,6 +51,7 @@ public class ProgramaPrincipal {
             double base = sc.nextDouble();
             System.out.println("Introduce la altura:");
             double altura = sc.nextDouble();
+            //introduzco un cambio de prueba
 
             Rectangulo rectangulo = new Rectangulo(base,altura,i+numero*2);
             arrayList.add(rectangulo);
